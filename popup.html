@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+
+      .photoContainer {
+        width:860px;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .photoContainer > a > img {
+        width:260px;
+        height:260px;
+        margin: 1px;
+        float:left;
+        cursor: pointer;
+      }
+
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+
+    <!--Photo Container-->
+    <div id="container" class="photoContainer">
+    </div>
+
+  </body>
+</html>
+
